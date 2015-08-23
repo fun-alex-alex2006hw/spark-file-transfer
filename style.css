@@ -1,0 +1,54 @@
+* {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+  cursor: default;
+}
+body {
+  color: #4a4a4a;
+  margin: 0;
+  font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#dropzone {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  margin: 0;
+  padding: 5px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+#closebutton {
+  width: 15px;
+  height: 15px;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  border-radius: 20px;
+  background-color: red;
+  -webkit-app-region: no-drag;
+}
+button, a {
+  -webkit-app-region: no-drag;
+}
+#closebutton:active {
+  background-color: darkred;
+}
+#closebutton:hover:after {
+  content: ".";
+  position: relative;
+  top: -24px;
+  left: 2px;
+  font-size: 36px;
+  color: #aa0000;
+}
