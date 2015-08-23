@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/pltarun/spark-file-transfer/issues"
   },
-  "homepage": "https://github.com/pltarun/spark-file-transfer#readme"
+  "homepage": "https://github.com/pltarun/spark-file-transfer#readme",
+  "devDependencies": {
+    "copy-paste": "^1.1.3"
+  }
 }
