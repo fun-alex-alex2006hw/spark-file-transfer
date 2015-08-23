@@ -103,3 +103,9 @@ Object.keys(ifaces).forEach(function(ifname) {
     }
   });
 });
+
+window.addEventListener('mousewheel', function(e) {
+  if (e.ctrlKey) {
+    e.preventDefault();
+  }
+});
