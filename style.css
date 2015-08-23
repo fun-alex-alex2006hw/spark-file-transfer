@@ -44,11 +44,3 @@ button, a {
 #closebutton:active {
   background-color: darkred;
 }
-#closebutton:hover:after {
-  content: ".";
-  position: relative;
-  top: -24px;
-  left: 2px;
-  font-size: 36px;
-  color: #aa0000;
-}
