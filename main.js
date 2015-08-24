@@ -30,8 +30,7 @@ app.on('ready', function() {
     height: 60,
     resizable: false,
     fullscreen: false,
-    frame: false,
-    menu: null
+    frame: false
   });
 
   // and load the index.html of the app.
