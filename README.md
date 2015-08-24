@@ -6,6 +6,7 @@ Just drag any file into the window and it can be downloaded from any device on y
 
 ## Currently supported releases:
 - OS X
+- Windows (untested, but should work)
 
 ## Get Spark
 Simply clone this repo and run `npm install`. Afterwards you can run `npm start` to run the app.
