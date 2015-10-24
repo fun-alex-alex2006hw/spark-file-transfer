@@ -9,19 +9,22 @@ function noProp(e) {
 }
 
 function drag(e) {
-  noProp(e);
+  e.stopPropagation();
+  e.preventDefault();
   document.getElementById("dropzone").style.backgroundColor = "#00ff00";
   document.getElementById("dropzone").innerHTML = "<h1>Drop now!</h1>";
 }
 
 function dragleave(e) {
-  noProp(e);
+  e.stopPropagation();
+  e.preventDefault();
   document.getElementById("dropzone").style.backgroundColor = "";
   document.getElementById("dropzone").innerHTML = "<h1>Drop a file inside this window</h1>";
 }
 
 function drop(e) {
-  noProp(e);
+  e.stopPropagation();
+  e.preventDefault();
   document.getElementById("dropzone").style.backgroundColor = "";
   document.getElementById("dropzone").removeEventListener("dragover", drag, false);
   document.getElementById("dropzone").removeEventListener("dragleave", dragleave, false);
@@ -39,7 +42,8 @@ function drop(e) {
   document.getElementById("sharelink").addEventListener("click", share, false);
 
   function share(e) {
-    noProp(e);
+    e.stopPropagation();
+    e.preventDefault();
     alert("You can drag this link into a chat window or email in order to send it to another PC. It has also been copied onto your clipboard.");
     clipboard.copy(ipaddr[0]);
   };
